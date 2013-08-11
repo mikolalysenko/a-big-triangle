@@ -31,6 +31,8 @@ shell.on("gl-render", function() {
 })
 ```
 
+[Check it out in your browser](http://mikolalysenko.github.io/a-big-triangle/)
+
 ## Install
 
 ```sh

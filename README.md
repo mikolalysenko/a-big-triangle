@@ -13,13 +13,15 @@ var shader
 
 shell.on("gl-init", function() {
   shader = createShader(shell.gl, 
-  "attribute vec2 position;\
+  "precision mediump float;\
+  attribute vec2 position;\
   varying vec2 uv;\
   void main() {\
-    uv = position;\
-    gl_Position = position;\
+    uv = position.xy;\
+    gl_Position = vec4(position.xy, 0.0, 1.0);\
   }",
-  "varying vec2 uv;\
+  "precision mediump float;\
+  varying vec2 uv;\
   void main() {\
     gl_FragColor = vec4(uv, 0, 1);\
   }")

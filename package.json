@@ -7,8 +7,9 @@
     "example": "example"
   },
   "dependencies": {
-    "gl-buffer": "~0.1.0",
-    "gl-vao": "~0.0.2"
+    "gl-vao": "^1.2.0",
+    "gl-buffer": "^2.0.9",
+    "weakmap": "0.0.6"
   },
   "devDependencies": {
     "gl-now": "~0.0.4",

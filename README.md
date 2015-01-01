@@ -1,6 +1,8 @@
 a-big-triangle
 ==============
-Draws a big triangle.
+Draws a big triangle that covers the entire viewport. Useful for GPGPU or when applying fullscreen postprocessing effects.
+
+If you're wondering *why* a big triangle and not a big square made from two smaller triangles, there are potentially significant [performance advantages](http://michaldrobot.com/2014/04/01/gcn-execution-patterns-in-full-screen-passes/) in taking the former approach.
 
 ## Example
 

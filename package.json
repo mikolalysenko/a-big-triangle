@@ -1,6 +1,6 @@
 {
   "name": "a-big-triangle",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Draws a big triangle",
   "main": "triangle.js",
   "directories": {
@@ -8,8 +8,8 @@
   },
   "dependencies": {
     "gl-vao": "^1.2.0",
-    "gl-buffer": "^2.0.9",
-    "weakmap": "0.0.6"
+    "gl-buffer": "^2.1.1",
+    "weak-map": "^1.0.5"
   },
   "devDependencies": {
     "gl-now": "~0.0.4",

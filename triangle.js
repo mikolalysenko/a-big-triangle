@@ -9,7 +9,7 @@ var TriangleCache = new weakMap()
 function createABigTriangle(gl) {
 
   var triangleVAO = TriangleCache.get(gl)
-  if(!triangleVAO) {
+  if(!triangleVAO || !gl.isBuffer(triangleVAO._triangleBuffer.buffer)) {
     var buf = createBuffer(gl, new Float32Array([-1, -1, -1, 4, 4, -1]))
     triangleVAO = createVAO(gl, [
       { buffer: buf,
@@ -17,6 +17,7 @@ function createABigTriangle(gl) {
         size: 2
       }
     ])
+    triangleVAO._triangleBuffer = buf
     TriangleCache.set(gl, triangleVAO)
   }
   triangleVAO.bind()

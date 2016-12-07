@@ -1,6 +1,6 @@
 {
   "name": "a-big-triangle",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Draws a big triangle",
   "main": "triangle.js",
   "directories": {
